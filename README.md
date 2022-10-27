@@ -11,4 +11,5 @@ Monetary is the total amount of money a customer spent in that given period. The
 Business requirements
 
 The Sales Manager wants me to segment customers into 4 levels: VIP, Normal, Low, and Extremely Low. The purpose of the Sales Manager when requesting me to do that because not only does he want to better understand customers but he also wants to give some attractive endowments to retain the customers based on their level.
+
 Data sources: https://www.kaggle.com/datasets/jihyeseo/online-retail-data-set-from-uci-ml-repo
