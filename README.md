@@ -8,7 +8,7 @@ The Sales Manager wants me to segment customers into 4 levels: VIP, Normal, Low,
 
 Data sources: https://www.kaggle.com/datasets/jihyeseo/online-retail-data-set-from-uci-ml-repo
 
-Note: The last date in the dataset is 2011-12-09. However, the day I do this project is 2022-07-22. Therefore, I modify the year in the dataset from 2010-2011 to 2020-2021 and I assume that the director wants to conduct RFM analysis in 2021-12-10.
+**Note:** The last date in the dataset is 2011-12-09. However, the day I do this project is 2022-07-22. Therefore, I modify the year in the dataset from 2010-2011 to 2020-2021 and I assume that the director wants to conduct RFM analysis in 2021-12-10.
 
 ## Data cleaning
 
@@ -22,9 +22,9 @@ Here are all the queries that I use to clean the data
 
 ## RFM analysis
 
-Recency: To calculate the recency (the last time that Customers are active), I just only find the latest date that customers buy stuff by using MAX() function and subtracting it by 2021-12-10.
+**Recency:** To calculate the recency (the last time that Customers are active), I just only find the latest date that customers buy stuff by using MAX() function and subtracting it by 2021-12-10.
 
-Frequency: When calculating frequency, at first I don’t realize that there are differences between the number of orders and the number of products that customers buy. After encountering errors, I gradually understand that to calculate the frequency we have to count the number of Orders not the number of Products because one order may have lots of products. We want to find out how many times customers buy stuff not how many products they have bought.
+**Frequency:** When calculating frequency, at first I don’t realize that there are differences between the number of orders and the number of products that customers buy. After encountering errors, I gradually understand that to calculate the frequency we have to count the number of Orders not the number of Products because one order may have lots of products. We want to find out how many times customers buy stuff not how many products they have bought.
 
 ![image](https://user-images.githubusercontent.com/101198685/215957047-dcf66476-2bbe-4675-aeef-238df521adc5.png)
 
@@ -32,7 +32,7 @@ Look at the picture above, the customer who has CustomerID 17850 bought 2 times.
 
 Therefore when I count the orders I have to combine the COUNT and DISTINCT functions.
 
-Monetary: It is so easy to find out how much customers have spent by multiplying the quantity of each product by its price then we sum it up by each customer.
+**Monetary:** It is so easy to find out how much customers have spent by multiplying the quantity of each product by its price then we sum it up by each customer.
 
 ![image](https://user-images.githubusercontent.com/101198685/215957087-a8e7adb7-165e-43fe-a253-ebaebe9e1843.png)
 ![image](https://user-images.githubusercontent.com/101198685/215957106-0577d09b-f721-4819-be6e-7bc04a7bfa5d.png)
@@ -45,7 +45,7 @@ Before doing that, I have to calculate the percentile of each value by using the
 
 Now I will respectively divide the values of each recency, frequency, and monetary into 4 levels of Quantile ( 0-25th, 25th-50th, 50th-75th, and 75th-100th)
 
-Note: I label 1, 2, 3, and 4 respectively for 0-25th, 25th-50th, 50th-75th, and 75th-100th for frequency and monetary. However, I only label 4, 3, 2, and 1 respectively for 0-25th, 25th-50th, 50th-75th, and 75th-100th for recency, because recency means how much time has elapsed since a customer’s last order. Therefore the smaller the value is, the more engaged a customer is with that brand.
+**Note:** I label 1, 2, 3, and 4 respectively for 0-25th, 25th-50th, 50th-75th, and 75th-100th for frequency and monetary. However, I only label 4, 3, 2, and 1 respectively for 0-25th, 25th-50th, 50th-75th, and 75th-100th for recency, because recency means how much time has elapsed since a customer’s last order. Therefore the smaller the value is, the more engaged a customer is with that brand.
 ![image](https://user-images.githubusercontent.com/101198685/215957232-5ad490cf-0077-4cf0-bc21-28cc81ff03e6.png)
 
 ![image](https://user-images.githubusercontent.com/101198685/215957997-f87b57ba-97bb-45b6-bc4a-e93b40eeacc9.png)
