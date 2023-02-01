@@ -55,9 +55,11 @@ When I have done all of the steps above, it is time to actually segment the cust
 First, I will sum up the values of Recency_rank, Frequency_rank, and Monetary_rank altogether and I attach those values to the RFM_score column. Then, I continue applying the Quantile concepts.
 ![image](https://user-images.githubusercontent.com/101198685/215957329-66c83655-fb6a-4a2b-8204-c0f66d296506.png)
 ![image](https://user-images.githubusercontent.com/101198685/215957346-412527ed-9d64-469a-8979-3b2c61694f46.png)
+
 Now, instead of labeling 1, 2, 3, and 4 respectively for 0-25th, 25th-50th, 50th-75th, and 75th-100th, I label VIP, Normal, Low, and Extremely Low respectively for 0-25th, 25th-50th, 50th-75th, and 75th-100th.
 ![image](https://user-images.githubusercontent.com/101198685/215957387-902472ba-80dd-4f2a-b21e-57607500b103.png)
 ![image](https://user-images.githubusercontent.com/101198685/215957409-aea63927-d36f-4f43-b1bf-c4fb45cfd2b9.png)
+
 This is the final result of the RFM analysis, customers are finally divided into 4 levels. However, I found that the result is so tedious for my Sales Manager to follow, so I decided to create a visualization of the customer segmentation. Here is the visualization that I will show to my Manager.
 ![image](https://user-images.githubusercontent.com/101198685/215957451-0b889e73-bfc1-4f7b-b229-af5c87bf4908.png)
 As you can see, the Extremely Low group accounts for the majority of the Customer Segmentation levels. Therefore, we need to create more attractive discounts or events to increase the conversion rate of those customers from the Extremely Low group to higher levels like Normal or VIP. In addition, the VIP group has the least members so the Sales Manager has to construct some strategies to retain those customers because those customers in the VIP group can contribute huge money to our company.
