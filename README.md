@@ -2,7 +2,7 @@
 Customer segmentation is the technique of dividing customers into groups based on their purchase patterns to identify who are the most profitable groups. In segmenting customers, various criteria can also be used depending on the market such as geographic, demographic characteristics or behavior bases, etc. There are so many techniques out there but I will use RFM analysis for my analysis.
 
 
-Business requirements
+## Business requirements
 
 The Sales Manager wants me to segment customers into 4 levels: VIP, Normal, Low, and Extremely Low. The purpose of the Sales Manager when requesting me to do that because not only does he want to better understand customers but he also wants to give some attractive endowments to retain the customers based on their level.
 
@@ -10,7 +10,7 @@ Data sources: https://www.kaggle.com/datasets/jihyeseo/online-retail-data-set-fr
 
 Note: The last date in the dataset is 2011-12-09. However, the day I do this project is 2022-07-22. Therefore, I modify the year in the dataset from 2010-2011 to 2020-2021 and I assume that the director wants to conduct RFM analysis in 2021-12-10.
 
-Data cleaning
+## Data cleaning
 
 First, I check data distribution in Kaggle and find that there are some missing values in the customerID column. Then, I write an easy query to check if there are any returned products. You can see that there are a lot of returned products in this dataset – the negative numbers are returned quantities.
 
@@ -20,7 +20,7 @@ In addition, the InvoiceDate is in Date-time format, in this analysis, I only wa
 Here are all the queries that I use to clean the data
 ![image](https://user-images.githubusercontent.com/101198685/215956972-863e90ef-28d8-49b3-a979-8663c897ec28.png)
 
-RFM analysis
+## RFM analysis
 
 Recency: To calculate the recency (the last time that Customers are active), I just only find the latest date that customers buy stuff by using MAX() function and subtracting it by 2021-12-10.
 
