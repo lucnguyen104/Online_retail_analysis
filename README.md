@@ -48,7 +48,7 @@ Now I will respectively divide the values of each recency, frequency, and moneta
 Note: I label 1, 2, 3, and 4 respectively for 0-25th, 25th-50th, 50th-75th, and 75th-100th for frequency and monetary. However, I only label 4, 3, 2, and 1 respectively for 0-25th, 25th-50th, 50th-75th, and 75th-100th for recency, because recency means how much time has elapsed since a customer’s last order. Therefore the smaller the value is, the more engaged a customer is with that brand.
 ![image](https://user-images.githubusercontent.com/101198685/215957232-5ad490cf-0077-4cf0-bc21-28cc81ff03e6.png)
 
-![image](https://user-images.githubusercontent.com/101198685/215957257-3128ca55-c4b3-40d7-8f54-6579c8d75c07.png)
+![image](https://user-images.githubusercontent.com/101198685/215957997-f87b57ba-97bb-45b6-bc4a-e93b40eeacc9.png)
 
 When I have done all of the steps above, it is time to actually segment the customer into 4 levels like the request of the Sales Manager: VIP, Normal, Low, and Extremely Low.
 
